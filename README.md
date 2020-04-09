@@ -8,6 +8,8 @@ A mortalidade é a porcentagem de mortes por casos confirmados.
 
 Para executar é apenas instalar as dependências com **npm install** e **npm start**.
 
+Link: https://dashboardcovid19.netlify.com/
+
 # API
 Foi utilizado a API externa [COVID 19 API]([https://covid19api.com/](https://covid19api.com/)) que usa os dados da [Johns Hopkins University Center for Systems Science and Engineering]([https://covid19api.com/](https://covid19api.com/)) 
 
@@ -63,3 +65,6 @@ Foi utilizado a API externa [COVID 19 API]([https://covid19api.com/](https://cov
 1. Redux - Para controle de estados
 2. Recharts - Para gráficos
 3. axios - Para requisições HTTP
+
+
+####Aluno: Pedro Ribeiro Bastos Soares
