@@ -67,4 +67,4 @@ Foi utilizado a API externa [COVID 19 API]([https://covid19api.com/](https://cov
 3. axios - Para requisições HTTP
 
 
-###Aluno: Pedro Ribeiro Bastos Soares
+##Aluno: Pedro Ribeiro Bastos Soares
