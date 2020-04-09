@@ -6,7 +6,7 @@ Exibe gráficos e informações para comparar a evolução da pandemia por país
 O sistema também possibilita acessar um dashboard por país, onde é exibido um gráfico comparativo entre os 3 status no país e o gráfico de mortalidade que permite visualizar a sobrecarga do sistema de saúde ou a subnotificação de casos por falta de testes.
 A mortalidade é a porcentagem de mortes por casos confirmados.
 
-
+Para executar é apenas instalar as dependências com **npm install** e **npm start**.
 
 # API
 Foi utilizado a API externa [COVID 19 API]([https://covid19api.com/](https://covid19api.com/)) que usa os dados da [Johns Hopkins University Center for Systems Science and Engineering]([https://covid19api.com/](https://covid19api.com/)) 
