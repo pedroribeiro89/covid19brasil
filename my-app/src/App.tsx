@@ -1,17 +1,15 @@
 import React from 'react';
 import './App.css';
-import TitleHeader from "./components/TitleHeader";
-import MainContent from "./components/MainContent";
-import Footer from "./components/Footer";
+import {ApplicationRoutes} from "./ApplicationRoutes";
+import {Style} from "./styles";
 
 function App() {
-  return (
-      <>
-        <TitleHeader></TitleHeader>
-        <MainContent></MainContent>
-        <Footer></Footer>
-      </>
+    return (
+      <div style={Style.main}>
+          <ApplicationRoutes />
+      </div>
   );
 }
 
 export default App;
+

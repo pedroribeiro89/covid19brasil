@@ -1,30 +1,23 @@
 import React from 'react';
 import CountryList from "./CountryList";
-import {Covid19ApiService} from "../services/Covid19ApiService";
-import {Country} from "../models/Country";
-import {AxiosResponse} from "axios";
+import {useSelector} from "react-redux";
+import CountryLineChart from "./CountryLineChart";
+import {CountryListState} from "../actions/countriesTypes";
+import StatusSelect from "./StatusSelect";
+import CountryDetailList from "./CountryDetailList";
+import {useCountryList} from "../hooks/useCountryList";
+import Info from "./Info";
 
 function MainContent() {
-    const [countries, setCountries] = React.useState<Country[]>([]);
-
-    const requestCountries = async () => {
-        const response: AxiosResponse<Country[]> = await Covid19ApiService.getCountries();
-        console.log('response');
-        console.log(response);
-        setCountries(response.data);
-    };
-
-    React.useEffect(() => { requestCountries(); }, []);
-
+    const state: CountryListState = useSelector((state: any) => { return state.countriesReducer });
+    useCountryList();
     return (
         <>
-            <div>
-                info
-            </div>
-
-            <CountryList countries={countries}></CountryList>
-
-            <div>grafico</div>
+            <Info></Info>
+            <CountryList></CountryList>
+            <StatusSelect></StatusSelect>
+            <CountryLineChart state={state}></CountryLineChart>
+            <CountryDetailList></CountryDetailList>
         </>
     );
 }

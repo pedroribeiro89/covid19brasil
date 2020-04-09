@@ -8,5 +8,5 @@ export class Country {
         this.slug = json['Slug'];
         this.provinces = json['Provinces'];
     }
-
 }
+
